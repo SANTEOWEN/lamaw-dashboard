@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Admin Dashboard</title>
+
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style_1.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="grid-container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="menu-icon" onclick="openSidebar()">
+        <span class="material-icons-outlined">menu</span>
+      </div>
+      <div class="header-left">
+        <h1></h1>
+      </div>
+      <div class="header-right">
+        <i class="uil uil-signout"></i>
+        Logout
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div class="sidebar-title">
+        <div class="sidebar-brand">
+          <div class="logo">
+            <img src="main-2.png" alt="">
+          </div>
+        </div>
+        <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+      </div>
+
+      <div class="menu">
+        <div class="item"><a class="sub-btn"><i class="uil uil-users-alt"></i>Accounts
+            <!--dropdown 1-->
+            <i class="uil uil-angle-right dropdown"></i>
+          </a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Admin</a>
+            <a href="#" class="sub-item">Teachers</a>
+            <a href="#" class="sub-item">Students</a>
+          </div>
+        </div>
+        <div class="item"><a class="sub-btn"><i class="uil uil-book"></i>Classes
+            <!--dropdown 2-->
+            <i class="uil uil-angle-right dropdown"></i>
+          </a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Course</a>
+            <a href="#" class="sub-item">Year</a>
+            <a href="#" class="sub-item">Section</a>
+          </div>
+        </div>
+        <div class="item"><a href=""><i class="uil uil-lightbulb-alt"></i>Subjects</a></div>
+        <div class="item"><a href=""><i class="uil uil-book-open"></i>Grade</a></div>
+      </div>
+    </aside>
+    <!-- End Sidebar -->
+
+    <!-- Main -->
+    <main class="main-container">
+      <div class="main-title">
+        <h2>DASHBOARD</h2>
+      </div>
+
+      <div class="main-cards">
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>Student Dashboard</h3>
+            <i class="uil uil-book-reader"></i>
+          </div>
+          <div class="button">
+            <a href="#" class="link" data-tc="tab-item-1" class="active">Open Dashoard</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>Teachers Dashboard</h3>
+            <i class="uil uil-graduation-cap"></i>
+          </div>
+          <div class="button">
+            <a href="#" class="link" data-tc="tab-item-2">Open Dashoard</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="charts">
+
+        <div class="charts-card tab-item-1">
+          <div class="table-header">
+            <p>Teachers Data</p>
+            <div class="inputs-dv">
+              <input placeholder="Add new">
+              <button class="btn">+ Add New</button>
+            </div>
+          </div>
+          <div class="table-section">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Course</th>
+                  <th>Year</th>
+                  <th>Section</th>
+                  <th>Action</th>
+                </tr>
+
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-cell="ID">1</td>
+                  <td data-cell="Name">Owen</td>
+                  <td data-cell="Course">BSCS</td>
+                  <td data-cell="Year">4th Year</td>
+                  <td data-cell="Section">A</td>
+                  <td>
+                    <button><span class="material-icons-outlined">edit</span></button>
+                    <button><span class="material-icons-outlined">delete</span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-cell="ID">1</td>
+                  <td data-cell="Name">Owen</td>
+                  <td data-cell="Course">BSCS</td>
+                  <td data-cell="Year">4th Year</td>
+                  <td data-cell="Section">A</td>
+                  <td>
+                    <button><span class="material-icons-outlined">edit</span></button>
+                    <button><span class="material-icons-outlined">delete</span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-cell="ID">1</td>
+                  <td data-cell="Name">Owen</td>
+                  <td data-cell="Course">BSCS</td>
+                  <td data-cell="Year">4th Year</td>
+                  <td data-cell="Section">A</td>
+                  <td>
+                    <button><span class="material-icons-outlined">edit</span></button>
+                    <button><span class="material-icons-outlined">delete</span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-cell="ID">1</td>
+                  <td data-cell="Name">Owen</td>
+                  <td data-cell="Course">BSCS</td>
+                  <td data-cell="Year">4th Year</td>
+                  <td data-cell="Section">A</td>
+                  <td>
+                    <button><span class="material-icons-outlined">edit</span></button>
+                    <button><span class="material-icons-outlined">delete</span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-cell="ID">1</td>
+                  <td data-cell="Name">Owen</td>
+                  <td data-cell="Course">BSCS</td>
+                  <td data-cell="Year">4th Year</td>
+                  <td data-cell="Section">A</td>
+                  <td>
+                    <button><span class="material-icons-outlined">edit</span></button>
+                    <button><span class="material-icons-outlined">delete</span></button>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="charts-card tab-item-2" style="display: none;">
+          <h2 class="chart-title">Students Data</h2>
+          <div id="student-dash"></div>
+        </div>
+
+      </div>
+    </main>
+    <!-- End Main -->
+
+  </div>
+
+  <!-- Custom JS -->
+  <script>
+    $('.sub-btn').click(function () {
+      $('this').next('.sub-menu').slideToggle();
+      $(this).find('.dropdown').toggleClass('rotate');
+    });
+  </script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
